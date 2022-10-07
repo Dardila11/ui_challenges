@@ -107,7 +107,6 @@ class GalaxyContainer extends StatelessWidget {
         ),
         CircleAvatar(
           radius: 25,
-          backgroundColor: Colors.blue,
           child: ClipOval(
             child: Image.asset('${assetsUrl}richard.jpeg'),
           ),
@@ -135,7 +134,7 @@ class GalaxyContainer extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 50,
+          bottom: 60,
           left: 120,
           child: CircleAvatar(
             radius: 18,
@@ -146,7 +145,7 @@ class GalaxyContainer extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 50,
+          top: 60,
           right: 120,
           child: CircleAvatar(
             radius: 18,
@@ -158,7 +157,7 @@ class GalaxyContainer extends StatelessWidget {
         ),
         const Positioned(
           left: 100,
-          top: 78,
+          top: 85,
           child: CircleAvatar(
             radius: 4,
             backgroundColor: Color(0xFFFF5829),
@@ -166,7 +165,7 @@ class GalaxyContainer extends StatelessWidget {
         ),
         const Positioned(
           right: 100,
-          bottom: 78,
+          bottom: 85,
           child: CircleAvatar(
             radius: 4,
             backgroundColor: Color(0xFFFF5829),
@@ -174,7 +173,7 @@ class GalaxyContainer extends StatelessWidget {
         ),
         const Positioned(
           left: 115,
-          bottom: 160,
+          bottom: 170,
           child: CircleAvatar(
             radius: 4,
             backgroundColor: Color(0xFFFF5829),
@@ -182,7 +181,7 @@ class GalaxyContainer extends StatelessWidget {
         ),
         const Positioned(
           right: 115,
-          top: 160,
+          top: 170,
           child: CircleAvatar(
             radius: 4,
             backgroundColor: Color(0xFFFF5829),

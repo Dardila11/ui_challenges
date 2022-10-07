@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenges/jobs_app/screens/jobs_main_screen.dart';
 import 'package:ui_challenges/social_app/screen/auth_screen.dart';
 
 void main() {
@@ -36,7 +37,12 @@ class HomePage extends StatelessWidget {
               AppButton(
                 app: AuthScreen(),
                 appName: 'UI Social App',
-              )
+              ),
+              SizedBox(height: 10),
+              AppButton(
+                app: JobsMainScreen(),
+                appName: 'Job Posts App',
+              ),
             ],
           ),
         ),

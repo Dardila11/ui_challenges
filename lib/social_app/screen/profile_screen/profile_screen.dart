@@ -97,7 +97,18 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                   Spacer(),
-                  Icon(Icons.more_horiz)
+                  Icon(Icons.more_horiz),
+                ],
+              ),
+              Row(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Image.asset(
+                      user.images.first,
+                      width: MediaQuery.of(context).size.width * .50,
+                    ),
+                  ),
                 ],
               )
             ],
@@ -124,7 +135,9 @@ class UserStats extends StatelessWidget {
       children: [
         Text(
           statTitle,
-          style: const TextStyle(color: Color(0xFFC1C1C1)),
+          style: const TextStyle(
+            color: Color(0xFFC1C1C1),
+          ),
         ),
         Text(
           statValue,
