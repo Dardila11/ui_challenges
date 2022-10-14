@@ -11,6 +11,7 @@ class SearchBox extends StatelessWidget {
         decoration: InputDecoration(
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
+              borderSide: BorderSide.none,
             ),
             fillColor: Colors.white,
             filled: true,

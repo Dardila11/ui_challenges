@@ -11,6 +11,8 @@ class JobPost {
     required this.qualifications,
     required this.responsabilities,
     required this.about,
+    required this.isRemote,
+    required this.country,
   });
 
   String companyName;
@@ -19,7 +21,9 @@ class JobPost {
   String location;
   String roleType;
   String datePosted;
+  String country;
   bool isBookMarked;
+  bool isRemote;
   String about;
   List<String> qualifications;
   List<String> responsabilities;
@@ -48,6 +52,8 @@ var jobPostList = <JobPost>[
     ],
     about:
         "The Client brings creative solutions to health systems, self-funded employers, and insurance carriers and specialize in customized health care benefits administration. They thrive on finding solutions that fit their client's unique business requirements, demographics, and strategies",
+    country: 'USA',
+    isRemote: false,
   ),
   JobPost(
     logoUrl: 'assets/jobs_app/images/david.jpeg',
@@ -71,6 +77,8 @@ var jobPostList = <JobPost>[
     ],
     about:
         "The Client brings creative solutions to health systems, self-funded employers, and insurance carriers and specialize in customized health care benefits administration. They thrive on finding solutions that fit their client's unique business requirements, demographics, and strategies",
+    country: 'USA',
+    isRemote: true,
   ),
   JobPost(
     logoUrl: 'assets/jobs_app/images/karen.jpeg',
@@ -94,6 +102,8 @@ var jobPostList = <JobPost>[
     ],
     about:
         "The Client brings creative solutions to health systems, self-funded employers, and insurance carriers and specialize in customized health care benefits administration. They thrive on finding solutions that fit their client's unique business requirements, demographics, and strategies",
+    country: 'UK',
+    isRemote: false,
   ),
   JobPost(
     logoUrl: 'assets/jobs_app/images/richard.jpeg',
@@ -117,5 +127,7 @@ var jobPostList = <JobPost>[
     ],
     about:
         'The Client brings creative solutions to health systems, self-funded employers, and insurance carriers and specialize in customized health care benefits administration. They thrive on finding solutions that fit their client\'s unique business requirements, demographics, and strategies',
+    country: 'Canada',
+    isRemote: true,
   ),
 ];
